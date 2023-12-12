@@ -9,28 +9,31 @@ struct AppListingView: View {
                 ScrollView(.vertical, showsIndicators: true) {
                     VStack {
                         HStack(spacing:20) {
+                            // Replace this image with your own app logo (square 1:1 format)
                             Image(systemName: "circle.square")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(maxWidth: 125)
+                                .frame(maxWidth: 110)
                             
                             VStack(alignment: .leading){
-                                
+                                // Replace this with your app's name
                                 Text("YOUR APP NAME")
                                     .font(.title)
                                     .bold()
-                                
+                                // Replace this with your app's subtitle
                                 Text("Your app's subtitle")
                                     .foregroundColor(Color.gray)
                                     .padding(.bottom,40)
                                 
                                 HStack{
-                                    Text("Get")
+                                    Text("GET")
+                                        .bold()
                                         .foregroundColor(Color.white)
-                                        .padding(EdgeInsets(top: 10, leading: 25, bottom: 10, trailing: 25))
+                                        .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
                                         .background(Color.blue)
                                         .cornerRadius(50, antialiased: true)
                                     
+                                    // Remove this if your app does not include any
                                     Text("In-App Purchases")
                                         .foregroundColor(Color.gray)
                                         .font(.caption)
